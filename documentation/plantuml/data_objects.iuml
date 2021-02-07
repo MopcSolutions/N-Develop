@@ -1,0 +1,55 @@
+namespace ndev {
+  class Author
+  {
+    ID
+    login
+    name
+    password
+  }
+  class Notes
+  class Timeline
+  class Character
+
+
+Author ..> Document : create
+Author ..> Notes : create
+Author ..> Character : create
+Author ..> Story : create
+Character ..> Timeline : has
+Story ..> Timeline : has
+Timeline ..> Timeslot : has
+Character ..> Timeslot : acts
+Story ..> Timeslot : acts
+Character ..> Goal : has
+Character ..> Plan : has
+Plan ..> Goal : targets
+Story ..> Milestone : has
+Document ..> Chapter : has
+
+}
+
+namespace community {
+  class Chat
+  class Message
+  
+  
+  Chat ..> Message : has
+}
+
+ndev.Author ..> community.Chat : participates
+ndev.Author .. community.Message : writes
+
+namespace version_control {
+  class repository
+  {
+    repository_name
+    versioned_item[]
+  }
+  class versioned_item
+  {
+    item
+    table
+    json
+    file_name
+  }
+}
