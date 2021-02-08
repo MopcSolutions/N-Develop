@@ -1,8 +1,6 @@
-CREATE TABLE `ndevelop`.`authors` (
-  `ID` INT NOT NULL,
-  `login` NVARCHAR(255) NOT NULL,
-  `name` NVARCHAR(255) NOT NULL,
-  `password` NVARCHAR(45) NOT NULL,
-  PRIMARY KEY (`ID`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4;
+CREATE TABLE ndevelop.authors (
+  ID INT NOT NULL,
+  login VARCHAR(255) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  password VARCHAR(45) NOT NULL,
+  PRIMARY KEY (ID));
