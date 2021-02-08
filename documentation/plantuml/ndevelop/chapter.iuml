@@ -1,0 +1,6 @@
+class Chapter
+{
+    title
+}
+
+Author ..> Chapter : owns
