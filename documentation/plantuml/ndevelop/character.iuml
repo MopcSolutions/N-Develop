@@ -1,0 +1,6 @@
+class Character
+{
+    name
+}
+
+Author ..> Character : owns
