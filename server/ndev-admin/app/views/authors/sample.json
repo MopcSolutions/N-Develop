@@ -1,0 +1,22 @@
+{
+    "authors": [
+        {
+            "ID": 1,
+            "login": "adam@test.com",
+            "name": "Adam Müller",
+            "active": true
+        },
+        {
+            "ID": 2,
+            "login": "brian@test.com",
+            "name": "Brian Bauer",
+            "active": true
+        },
+        {
+            "ID": 3,
+            "login": "carl@test.com",
+            "name": "Carl Benz",
+            "active": false
+        }
+    ] 
+}
