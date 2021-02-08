@@ -1,0 +1,6 @@
+class Timeline
+{
+    title
+}
+
+Author ..> Timeline : owns
