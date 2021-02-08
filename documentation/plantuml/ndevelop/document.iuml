@@ -1,0 +1,7 @@
+class Document
+{
+    type
+    caption
+}
+
+Author ..> Document : owns
