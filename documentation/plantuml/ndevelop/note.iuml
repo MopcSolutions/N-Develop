@@ -1,0 +1,13 @@
+class Note
+{
+    owner
+    text
+}
+
+Author ..> Note : owns
+
+Note ..> Chapter : belongs
+Note ..> Document : belongs
+Note ..> Character : belongs
+Note ..> Story : belongs
+Note ..> Timeline : belongs
