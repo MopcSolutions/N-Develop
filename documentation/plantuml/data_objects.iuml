@@ -25,6 +25,7 @@ Character ..> Plan : has
 Plan ..> Goal : targets
 Story ..> Milestone : has
 Document ..> Chapter : has
+Author ..> Book : publish
 
 }
 
