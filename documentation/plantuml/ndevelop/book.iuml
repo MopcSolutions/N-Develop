@@ -1,0 +1,7 @@
+class Book
+{
+    Title
+    ISBN
+}
+
+Author ..> Book : owns
