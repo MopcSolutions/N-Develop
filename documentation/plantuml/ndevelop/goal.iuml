@@ -1,0 +1,7 @@
+class Goal
+{
+    what
+    when
+}
+
+Author ..> Goal : owns
