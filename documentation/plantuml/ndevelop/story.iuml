@@ -1,0 +1,6 @@
+class Story
+{
+
+}
+
+Author ..> Story : owns
