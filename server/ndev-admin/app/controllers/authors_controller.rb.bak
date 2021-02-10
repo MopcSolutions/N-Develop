@@ -1,0 +1,9 @@
+class AuthorsController < ApplicationController
+  def index
+    @authors = Author.first
+    render json: => @authors
+  end
+
+  def show
+  end
+end
