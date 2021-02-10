@@ -1,30 +1,5 @@
                                   Prefix Verb   URI Pattern                                                                                       Controller#Action
-                                 authors GET    /authors(.:format)                                                                                authors#index
-                                         POST   /authors(.:format)                                                                                authors#create
-                              new_author GET    /authors/new(.:format)                                                                            authors#new
-                             edit_author GET    /authors/:id/edit(.:format)                                                                       authors#edit
-                                  author GET    /authors/:id(.:format)                                                                            authors#show
-                                         PATCH  /authors/:id(.:format)                                                                            authors#update
-                                         PUT    /authors/:id(.:format)                                                                            authors#update
-                                         DELETE /authors/:id(.:format)                                                                            authors#destroy
-                             delete_note GET    /notes/:id/delete(.:format)                                                                       notes#delete
-                                   notes GET    /notes(.:format)                                                                                  notes#index
-                                         POST   /notes(.:format)                                                                                  notes#create
-                                new_note GET    /notes/new(.:format)                                                                              notes#new
-                               edit_note GET    /notes/:id/edit(.:format)                                                                         notes#edit
-                                    note GET    /notes/:id(.:format)                                                                              notes#show
-                                         PATCH  /notes/:id(.:format)                                                                              notes#update
-                                         PUT    /notes/:id(.:format)                                                                              notes#update
-                                         DELETE /notes/:id(.:format)                                                                              notes#destroy
-                            delete_story GET    /stories/:id/delete(.:format)                                                                     stories#delete
-                                 stories GET    /stories(.:format)                                                                                stories#index
-                                         POST   /stories(.:format)                                                                                stories#create
-                               new_story GET    /stories/new(.:format)                                                                            stories#new
-                              edit_story GET    /stories/:id/edit(.:format)                                                                       stories#edit
-                                   story GET    /stories/:id(.:format)                                                                            stories#show
-                                         PATCH  /stories/:id(.:format)                                                                            stories#update
-                                         PUT    /stories/:id(.:format)                                                                            stories#update
-                                         DELETE /stories/:id(.:format)                                                                            stories#destroy
+                                         GET    /:controller(/:action(/:id))(.:format)                                                            :controller#:action
            rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                           action_mailbox/ingresses/postmark/inbound_emails#create
               rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                              action_mailbox/ingresses/relay/inbound_emails#create
            rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                           action_mailbox/ingresses/sendgrid/inbound_emails#create
@@ -33,8 +8,6 @@
             rails_mailgun_inbound_emails POST   /rails/action_mailbox/mailgun/inbound_emails/mime(.:format)                                       action_mailbox/ingresses/mailgun/inbound_emails#create
           rails_conductor_inbound_emails GET    /rails/conductor/action_mailbox/inbound_emails(.:format)                                          rails/conductor/action_mailbox/inbound_emails#index
                                          POST   /rails/conductor/action_mailbox/inbound_emails(.:format)                                          rails/conductor/action_mailbox/inbound_emails#create
-       new_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/new(.:format)                                      rails/conductor/action_mailbox/inbound_emails#new
-      edit_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id/edit(.:format)                                 rails/conductor/action_mailbox/inbound_emails#edit
            rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                                      rails/conductor/action_mailbox/inbound_emails#show
                                          PATCH  /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                                      rails/conductor/action_mailbox/inbound_emails#update
                                          PUT    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                                      rails/conductor/action_mailbox/inbound_emails#update
